@@ -1,0 +1,121 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Called 'Model\\:\\:make\\(\\)' which performs unnecessary work, use 'new Model\\(\\)'\\.$#"
+			count: 1
+			path: app/Http/Controllers/CartController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CheckoutController\\:\\:create\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Http/Controllers/CheckoutController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CheckoutController\\:\\:index\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Http/Controllers/CheckoutController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\SearchProductsController\\:\\:index\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Http/Controllers/SearchProductsController.php
+
+		-
+			message: "#^Method App\\\\Models\\\\Order\\:\\:detail\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Models/Order.php
+
+		-
+			message: "#^Method App\\\\Models\\\\Product\\:\\:matches\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Models/Product.php
+
+		-
+			message: "#^Method App\\\\Models\\\\Product\\:\\:matches\\(\\) has parameter \\$query_str with no type specified\\.$#"
+			count: 1
+			path: app/Models/Product.php
+
+		-
+			message: "#^PHPDoc tag @var above a method has no effect\\.$#"
+			count: 1
+			path: app/Providers/RouteServiceProvider.php
+
+		-
+			message: "#^PHPDoc tag @var does not specify variable name\\.$#"
+			count: 1
+			path: app/Providers/RouteServiceProvider.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:add\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:add\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:exists\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:exists\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:get\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:remove\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:remove\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:total\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:update\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:update\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Method App\\\\Services\\\\CartService\\:\\:update\\(\\) has parameter \\$qty with no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Property App\\\\Services\\\\CartService\\:\\:\\$cart has no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Property App\\\\Services\\\\CartService\\:\\:\\$items has no type specified\\.$#"
+			count: 1
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 2
+			path: app/Services/CartService.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 2
+			path: app/Services/CartService.php

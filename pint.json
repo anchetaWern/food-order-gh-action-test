@@ -1,0 +1,12 @@
+{
+	
+	"rules": {
+        "no_unused_imports": true,
+        "no_useless_else": true,
+        "ordered_imports": true,
+        "visibility_required": true,
+        "array_syntax": true,
+        "list_syntax": true,
+        "clean_namespace": true
+    }
+}
