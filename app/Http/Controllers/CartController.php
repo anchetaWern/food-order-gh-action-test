@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Services\CartService;
-use Illuminate\Http\RedirectResponse;
+
 
 use App\Models\Order;
 
@@ -20,14 +20,14 @@ class CartController extends Controller
     }
 
 
-    public function store(CartService $cart): RedirectResponse
+    public function store(CartService $cart)
     {
         $cart->add(request('id'));
         return redirect('/cart');
     }
 
 
-    public function destroy(CartService $cart): RedirectResponse
+    public function destroy(CartService $cart)
     {
         $id = request('id');
         $cart->remove($id);
@@ -36,7 +36,7 @@ class CartController extends Controller
     }
 
 
-    public function update(CartService $cart): RedirectResponse
+    public function update(CartService $cart)
     {
         $cart->update(request('id'), request('qty'));
         return redirect('/cart');
