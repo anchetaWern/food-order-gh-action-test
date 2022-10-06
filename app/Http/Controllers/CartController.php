@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Services\CartService;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\View\View;
+
 use App\Models\Order;
 
 class CartController extends Controller
 {
 
-    public function index(CartService $cart): View
+    public function index(CartService $cart)
     {
         Order::make();
         $cart_items = $cart->get();
