@@ -26,11 +26,11 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
-      - name: Run Larastan
-        run: ./vendor/bin/phpstan analyse
-
       - name: Run Psalm
         run: ./vendor/bin/psalm --show-info=true
+
+       - name: Run Larastan
+        run: ./vendor/bin/phpstan analyse
 
       - name: Run Enlightn
         run: php artisan enlightn --ci --report
