@@ -26,6 +26,19 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
+      - name: Run Larastan
+        uses: php-actions/phpstan@v2
+        with: 
+          php_version: '8.1'
+
+      - name: PHP Insights
+        uses: stefanzweifel/phpinsights-action@v1.1.1
+
+      - name: Run Psalm
+        uses: docker://vimeo/psalm-github-actions
+        with: 
+          php_version: '8.1'
+
       - name: Run PHPInsights
         run: ./vendor/bin/phpinsights
 
