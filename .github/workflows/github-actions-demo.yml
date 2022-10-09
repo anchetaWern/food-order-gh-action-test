@@ -32,8 +32,16 @@ jobs:
           preset: laravel
           verboseMode: true
           testMode: true
-        
+
+      - name: Run Larastan
+        run: ./vendor/bin/phpstan analyse
+
+      - name: Run PHPInsights
+        run: ./vendor/bin/phpinsights
+
       - name: Run Psalm
-        uses: docker://vimeo/psalm-github-actions  
-        
-      - uses: stefanzweifel/phpinsights-action@v1.1.1
+        run: ./vendor/bin/psalm --show-info=true
+
+      - name: Run Enlightn
+        run: php artisan enlightn
+      
